@@ -40,10 +40,11 @@
 
 
 // Reduce Method
-
-
-
-
+let arr = [1,2,3,9,4,5];
+let c = arr.reduce((value1, value2)=>{
+    return value1+value2;
+})
+// console.log(c);
 // Array iteration
 // for loop
 // let arr = [1,2,3,4,5,6,7,8,9,10];
@@ -51,7 +52,22 @@
 //     console.log(arr[i]);
 
 // Using forEach
-let arr = [1,2,3,4,5,6,7,8,9,10];
- arr.forEach((num,indx)=>{
-    console.log(num);
-})
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+//  arr.forEach((num,indx)=>{
+//     console.log(num);
+// })
+
+// 2D array
+let arr2 = [
+    [1,2],
+    [3,4],
+];
+for(let i=0; i<2; i++){
+    for(let j=0; j<2; j++){
+        // console.log(arr2[i][j]);
+    }
+}
+console.log(arr2[0][0]);
+console.log(arr2[0][1]);
+console.log(arr2[1][0]);
+console.log(arr2[1][1]);
