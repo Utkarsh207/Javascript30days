@@ -36,15 +36,51 @@
 
 
 // Task 3 
-let library = {
-    name : 'Best Library of the world',
-    books : [
-        {
-            title : "Book1",
-            Author : "Author1",
+// let library = {
+//     name : 'Best Library of the world',
+//     books : [
+//         {
+//             title : "Book1",
+//             Author : "Author1",
+//         }
+//     ]
+
+
+// };
+// console.log(library);
+
+// let library = {
+//     name:'Library 1',
+//     book: [
+//         {
+//             title : "Book1",
+//             Author : "Author1",
+//         },
+//         {
+//             title : "Book2",
+//             Author:"Author2"
+//         },
+//         {
+//             title : "Book3",
+//             Author:"Author3"
+//         },
+        
+//     ]
+    
+// };
+// console.log(library.book);
+
+
+let books = {
+        title : 'Legends',
+        Author : 'Utkarsh',
+        year : '2003',
+        // 'date-of-publication' : '2003',
+
+
+        displayInformation(){
+            return `title ${this.title} Year ${this.year} `;
         }
-    ]
 
-
-};
-console.log(library);
+    };
+console.log(books.displayInformation());
