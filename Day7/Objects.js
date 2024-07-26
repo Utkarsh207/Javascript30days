@@ -83,4 +83,13 @@ let books = {
         }
 
     };
-console.log(books.displayInformation());
+// console.log(books.displayInformation());
+// console.log(Object.values(books));
+console.log(Object.keys(books));
+
+
+// for ... in
+// for(let i in books){
+//     console.log(i,":",books[i]);
+// }
+
