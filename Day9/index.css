@@ -1,7 +1,7 @@
-h1{
+/* h1{
     font-size: 40px;
     font-weight: 700;
-}
+} */
 button{
     padding: 10px;
     border-radius: 20%; 
@@ -11,4 +11,12 @@ button{
 #border{
     border: 2px solid black;
     width: 20%;
+}
+.original{
+    background-color: royalblue;
+    color: salmon;
+}
+.new{
+    background-color: black;
+    color: yellow;
 }

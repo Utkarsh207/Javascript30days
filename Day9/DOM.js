@@ -34,25 +34,29 @@
 // <!-- TASK 7 -->
 document.querySelector('img').src = "https://parade.com/.image/t_share/MTkzMDEwNDIzOTkyMTY1NTk3/inspirational-quote.png";
 // <!-- TASK 8 -->
+let h = document.querySelector('h1');
+h.classList.add('new');
+h.classList.remove('original');
+
 // <!-- TASK 9 -->
-let flag = 0;
-let para = document.querySelector('#para');
-let button = document.querySelector('button');
-button.addEventListener('click', function(){
-    if(flag ==0){
-    para.textContent = 'Never Fold Never Backdown - SMW';
-    flag = 1;
-    }
-    else{
-        para.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, delectus?';
-        flag =0;
-    }
-})
-// <!-- TASK 10 -->
-let border = document.querySelector('#border');
-border.addEventListener('mouseover', function(){
-    border.style.border = '2px solid crimson'
-})
+// let flag = 0;
+// let para = document.querySelector('#para');
+// let button = document.querySelector('button');
+// button.addEventListener('click', function(){
+//     if(flag ==0){
+//     para.textContent = 'Never Fold Never Backdown - SMW';
+//     flag = 1;
+//     }
+//     else{
+//         para.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, delectus?';
+//         flag =0;
+//     }
+// })
+ // <!-- TASK 10 -->
+// let border = document.querySelector('#border');
+// border.addEventListener('mouseover', function(){
+//     border.style.border = '2px solid crimson'
+// })
 
 
 
