@@ -28,22 +28,29 @@ let quote  =`he thing is, continuity of strategic direction and continuous impro
 // console.log(n,a,t);
 
 // Task 3
-// Spread Operator
+// Spread Operator - 1.Spreading an Array into Individual Elements
+// You can use the spread operator to concatenate arrays:
+// It is also useful for creating a copy of an array
+// let arr4 = [12,3];
+// let copy = [...arr4];
+// console.log(copy);
+
+
 let arr1 = [1,2,3,4,5];
 let arr2 = [...arr1,8,9,10,11,12];
 // console.log(arr2);
 
-
-// Rest Operator
+// Rest Operator  converts the multiple arguments to a array
 function Sum(...args){
     let sum = 0;
+    console.log(args);
     for (const i of args) {
         sum+=i;
     }
     return sum;
 }
 
-console.log(Sum(1,1,1,5,5,3));
+// console.log(Sum(1,1,1,5,5,3));
 
 
 
