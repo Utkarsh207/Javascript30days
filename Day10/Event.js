@@ -41,8 +41,57 @@
 // })
 
 // <!-- TASK 4 -->
-let button = document.querySelector('button');
-button.addEventListener('mouseover', function(){
-    button.style.backgroundColor = 'black';
-    button.style.color = 'aliceblue';
+// let button = document.querySelector('button');
+// button.addEventListener('mouseout', function(){
+//     button.style.backgroundColor = 'royalBlue';
+//     button.style.color = 'salmon';
+// })
+
+// <!-- TASK 5 -->
+let input = document.querySelector('#input');
+// input.addEventListener('keydown', function(e){
+//     console.log(`Key Pressed : ${e.key}`);
+    
+// })
+// <!-- TASK 6 -->
+// input.addEventListener('keyup', function(e){
+//     console.log(`Key Up: ${e.key}`);
+//   });
+
+
+// <!-- TASK 7 -->
+
+let form = document.querySelector('#myForm');
+form.addEventListener('submit',function(e){
+    e.preventDefault();
+
+    const  formData = new FormData(form);
+
+    for(const [key,value] of formData.entries()){
+        console.log(`${key}: ${value}`);
+        
+    };
+    
 })
+
+// <!-- TASK 8 -->
+let dd = document.querySelector('#myDropDown');
+let p = document.querySelector('#paragraph');
+
+dd.addEventListener('change' , function(){
+    let selectedValue = dd.value;
+
+
+    p.textContent = `You Selected ${selectedValue}`;
+})
+
+// <!-- TASK 9 -->
+let li = document.querySelector('ul');
+li.addEventListener('click', function(event){
+    if(event.target.tagName ==='LI'){
+        console.log(event.target.textContent);
+        
+    }
+})
+
+// <!-- TASK 10 -->
