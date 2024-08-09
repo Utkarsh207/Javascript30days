@@ -61,37 +61,51 @@ let input = document.querySelector('#input');
 
 // <!-- TASK 7 -->
 
-let form = document.querySelector('#myForm');
-form.addEventListener('submit',function(e){
-    e.preventDefault();
+// let form = document.querySelector('#myForm');
+// form.addEventListener('submit',function(e){
+//     e.preventDefault();
 
-    const  formData = new FormData(form);
+//     const  formData = new FormData(form);
 
-    for(const [key,value] of formData.entries()){
-        console.log(`${key}: ${value}`);
+//     for(const [key,value] of formData.entries()){
+//         console.log(`${key}: ${value}`);
         
-    };
+//     };
     
-})
+// })
 
 // <!-- TASK 8 -->
-let dd = document.querySelector('#myDropDown');
-let p = document.querySelector('#paragraph');
+// let dd = document.querySelector('#myDropDown');
+// let p = document.querySelector('#paragraph');
 
-dd.addEventListener('change' , function(){
-    let selectedValue = dd.value;
+// dd.addEventListener('change' , function(){
+//     let selectedValue = dd.value;
 
 
-    p.textContent = `You Selected ${selectedValue}`;
-})
+//     p.textContent = `You Selected ${selectedValue}`;
+// })
 
 // <!-- TASK 9 -->
-let li = document.querySelector('ul');
-li.addEventListener('click', function(event){
-    if(event.target.tagName ==='LI'){
-        console.log(event.target.textContent);
+// let li = document.querySelector('ul');
+// li.addEventListener('click', function(event){
+//     if(event.target.tagName ==='LI'){
+//         console.log(event.target.textContent);
         
-    }
-})
+//     }
+// })
 
 // <!-- TASK 10 -->
+document.getElementById('buttonContainer').addEventListener('click',function(e){
+    if(e.target.tagName === 'BUTTON'){
+        alert('Button Clicked ' + e.target.textContent);
+    }
+  })
+
+document.getElementById('addButton').addEventListener('click', function(){
+    const newButton = document.createElement('button');
+    newButton.textContent = 'New Button';
+
+
+document.getElementById('buttonContainer').appendChild(newButton);
+  })
+
